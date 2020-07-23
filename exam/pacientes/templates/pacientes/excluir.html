@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>O que deseja fazer?</title>
+  </head>
+  <body>
+    <form action="{% url 'pacientes:excluir' paciente.id%}" method="post">{% csrf_token %}
+        <input type="text" id="name" name="name"><br>
+        <label for="name">Nome completo</label><br>
+
+        <input type="date" name="data"> 
+        <label for="data">Data de nascimento</label><br>
+
+        <input type="text" id="tipo" name="tipo"><br>
+        <label for="name">Tipo de teste</label><br>
+
+        <input type="checkbox" name="resultado">
+        <label for="resultado">Resultado do teste</label><br>
+      <input type="submit" value="Adicionar paciente">
+    </form>
+  </body>
+</html>

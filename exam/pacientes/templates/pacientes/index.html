@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>O que deseja fazer?</title>
+  </head>
+  <body>
+        <h1>O que deseja fazer?</h1>
+        <li><a href="{% url 'pacientes:adicionar'%}">Adicionar paciente</a></li>
+        <li><a href="{% url 'pacientes:results'%}">Ver pacientes</a></li>
+        <li><a href="{% url 'pacientes:excluir'%}">Excluir paciente</a></li>
+    </ul>
+  </body>
+</html>

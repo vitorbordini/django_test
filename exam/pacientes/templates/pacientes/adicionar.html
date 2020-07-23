@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test</title>
+  </head>
+  <body>
+
+    <form action="{% url 'pacientes:add' %}" method="post">{% csrf_token %}
+        <label for="name">Nome completo</label><br>
+        <input type="text" id="name" name="name"><br>
+        
+        <label for="data">Data de nascimento</label><br>
+        <input type="date"  name="data" id="data"> <br>
+        
+        
+        <label for="name">Tipo de teste</label><br>
+        <input type="text" id="tipo" name="tipo"><br>
+        
+        <label for="resultado">Resultado do teste</label>
+        <input type="checkbox" name="resultado" id="resultado"><br>
+        
+      <input type="submit" value="Adicionar paciente">
+    </form>
+  </body>
+
